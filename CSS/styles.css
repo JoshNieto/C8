@@ -16,7 +16,7 @@ img {
    max-width: 100%;
    display: block;
    }
-}
+
 /* Style rule for box sizing applies to all elements */
 * {
     box-sizing: border-box;
@@ -133,7 +133,7 @@ main p {
    border-radius: 8px;
 }
 
-#contact {
+#contact, #rental h2 {
    text-align: center;
 }
 
@@ -150,6 +150,35 @@ main p {
      text-decoration: none;
      font-size: 1.5em;
      display: block;
+}
+
+/* Style rules for table */
+table {
+   border: 1px solid #373684;
+   border-collapse: collapse;
+   margin: 0 auto;
+   width: 100%;
+}
+
+caption {
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 1%;
+}
+
+th, td {
+   border: 1px solid #373684;
+   padding: 2%;
+}
+
+th {
+   background-color: #373684;
+   color: #fff;
+   font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+   background-color: #b7b7e1;
 }
 
 #contact .email-link {
@@ -203,19 +232,25 @@ aside {
 figcaption {
    font-size: 1em;
    }
-}
+
    
 /* Tablet Viewport: Style rule for map */
 .map {
-   width: 500px
-   height: 450px
+   width: 500px;
+   height: 450px;
 }
    
    /* Desktop Viewport: Style rule for header */
       header {
       padding: 2%
+      
    }
 
+/* Desktop Viewport: Style rules for table */ 
+table {
+   padding: 2%;
+}
+   
 /* Media Query for Print */
 @media print {
 
