@@ -193,6 +193,29 @@ tr:nth-child(odd) {
    height: 50%;
 }
 
+/* Style rules for form elements */
+fieldset, input {
+   margin-bottom: 2%;
+}
+
+fieldset legend {
+   font-weight: bold;
+   font-size: 1.25em;
+}
+
+label {
+   display: block;
+   padding-top: 3%;
+}
+
+form #submit {
+   margin: 0 auto;
+   display: block;
+   padding: 3%;
+   background-color: #b7b7e1;
+   font-size: 1em;
+}
+
 /* Style rules for footer content */
 footer {
    text-align: center;
@@ -214,10 +237,23 @@ footer a {
    grid-template-columns: 1fr 1fr;
    grid-gap: 20px;
 }
+   
 aside {
    grid-column: 1 / span 2;
    }
-} 
+
+/* Tablet Viewport: Style rule for map */
+.map {
+   width: 500px;
+   height: 450px;
+}
+
+/* Tablet Viewport: Style rule for form element */ 
+form {
+   width: 70%;
+   margin: 0 auto;
+   }
+}
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px) {
@@ -232,33 +268,27 @@ aside {
 figcaption {
    font-size: 1em;
    }
-
-   
-/* Tablet Viewport: Style rule for map */
-.map {
-   width: 500px;
-   height: 450px;
-}
    
 /* Desktop Viewport: Style rule for header */
 header {
-   padding: 2%
+   padding: 2%;
       
 }
 
 /* Desktop Viewport: Style rules for table */ 
 table {
-   padding: 70%;
+   width: 70%;
    }
-}
-   
-/* Media Query for Print */
-@media print {
 
-   body {
-      background-color: #fff;
-      color: #000;
-   }
+/* Desktop Viewport: Style rules for form elements */
+.form-grid {
+   display: grid;
+   grid-template-column: auto auto;
+   grid-gap: 20px;
+}
+
+.btn {
+   grid-column: 1 / span 2;
 }
 
 /* Desktop Viewport: Style rules for nav area */
@@ -284,8 +314,28 @@ main h3 {
    width: 29%;
    float: left;
    margin: 0 2;
+   }
 }
-   
+
+/* Media Query for Print */
+@media print {
+
+   body {
+      background-color: #fff;
+      color: #000;
+   }
+}
+
+/* Desktop Viewport: Style rules for nav area */
+nav li {
+   padding: 0.5em 1.5em;
+}
+
+nav li:hover {
+      color:#373684;
+      background-color: #e5e9fc
+   }
+
 /* Tablet Viewport: Style rules for nav area */
 nav li{
    border-top: none;
