@@ -240,15 +240,16 @@ figcaption {
    height: 450px;
 }
    
-   /* Desktop Viewport: Style rule for header */
-      header {
-      padding: 2%
+/* Desktop Viewport: Style rule for header */
+header {
+   padding: 2%
       
-   }
+}
 
 /* Desktop Viewport: Style rules for table */ 
 table {
-   padding: 2%;
+   padding: 70%;
+   }
 }
    
 /* Media Query for Print */
