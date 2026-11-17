@@ -68,10 +68,8 @@ header {
 }
 
 header h1 {
-   .dm-serif-display-regular-italic {
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: italic;
+
 }
 
 
